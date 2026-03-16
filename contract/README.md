@@ -101,9 +101,9 @@ See the contract code in `contracts/donationbox/src/lib.rs` for detailed functio
 To include images in the project documentation, upload them to the `images/` directory and reference them in the README or other files.
 
 Example:
-
-![Donation Box](donationbox-image.png)
-
+```
+![Donation Box](images/donation-box.png)
+```
 
 ## Contributing
 
