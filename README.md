@@ -1,21 +1,41 @@
-# Soroban Donation Box
+# DonationBox Web3
 
-A smart contract for managing donations on the Soroban blockchain.
+Complete Web3 donation platform with Soroban smart contract, interactive frontend, and backend API.
 
-## Overview
+## Components
 
-The Donation Box contract allows users to donate funds to a centralized box. The admin (beneficiary) can withdraw the collected donations. The box can be opened or closed to control whether new donations are accepted.
+- **Contract** (`contract/`): Soroban smart contract for on-chain donations, badges, milestones, voting
+- **Frontend** (`frontend/`): Vanilla JS app with dashboard, map, leaderboard, voting
+- **Backend** (`backend/`): Node.js API server with SQLite database
 
 ## Features
 
-- **Initialization**: Set an admin who can manage the box and withdraw funds.
-- **Donations**: Users can donate positive amounts while the box is open.
-- **Withdrawals**: Admin can withdraw all available funds.
-- **Box Control**: Admin can open or close the donation box.
-- **Queries**: Check total donated, available funds, individual donor amounts, donor list, etc.
-- **Admin Transfer**: Admin can transfer the admin role to another address.
+- Real-time impact dashboard
+- NFT thank-you badges (Bronze/Silver/Hero)
+- Global donor map
+- Milestone unlock system
+- Community voting (DAO-style)
+- Donation gamification with levels
 
-## Project Structure
+## Deployment Status
+
+### ✅ Contract
+- Built and ready for deployment
+- Run: `soroban contract deploy --wasm target/wasm32v1-none/release/donationbox.wasm --source YOUR_KEY --network testnet`
+
+### ✅ Backend
+- **Status**: Deployed Locally
+- **URL**: http://localhost:3000
+- **Features**: API endpoints, SQLite database, CORS enabled
+
+### ✅ Frontend
+- **Status**: Deployed Locally
+- **URL**: http://localhost:8000
+- **Features**: Full Web3 app with Freighter integration
+
+## Production Deployment
+
+For production, deploy backend to Heroku/Railway and frontend to Netlify/Vercel.
 
 ```
 .
